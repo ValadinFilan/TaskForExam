@@ -7,23 +7,10 @@ int getInt(string massage) {
     cin >> Input;
     return Input;
 }
-double getDouble(string message) {
-    double Input;
-    cout << message;
-    cin >> Input;
-    return Input;
-}
 int main()
 {
-    int a = getInt("a: ");
-    int b = getInt("a: ");
-    int result = 0;
-    for (int i = 0; i < a; i++)
-    {
-        for (int i = 0; i < b; i++)
-        {
-            result++;
-        }
-    }
+    int N = getInt("N: ");
+    int M = getInt("M: ");
+    int result = (N+1)*(M+1)*N*M/4;
     cout << result;
 }
