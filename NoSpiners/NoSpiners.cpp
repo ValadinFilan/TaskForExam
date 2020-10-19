@@ -7,6 +7,12 @@ int getInt(string massage) {
     cin >> Input;
     return Input;
 }
+double getDouble(string message) {
+    double Input;
+    cout << message;
+    cin >> Input;
+    return Input;
+}
 int main()
 {
     int a = getInt("a: ");
