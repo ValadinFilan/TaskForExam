@@ -27,7 +27,7 @@ int* replace(int k1, int k2, int* a, int n) {
 	m[k2] = t;
 	return m;
 }
-int counter = 0;
+
 int Moving(int n, int m, int* a) {
 	int result = 0;
 	for (int i = m; i <= n; i++)
