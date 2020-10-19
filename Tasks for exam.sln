@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spiners2", "Spiners2\Spiner
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NoSpiners", "NoSpiners\NoSpiners.vcxproj", "{D047F2E8-32FA-48AC-B732-BB469D1A02F3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Train", "Train\Train.vcxproj", "{274A2C4D-12E6-4603-9162-B97C370B197A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D047F2E8-32FA-48AC-B732-BB469D1A02F3}.Release|x64.Build.0 = Release|x64
 		{D047F2E8-32FA-48AC-B732-BB469D1A02F3}.Release|x86.ActiveCfg = Release|Win32
 		{D047F2E8-32FA-48AC-B732-BB469D1A02F3}.Release|x86.Build.0 = Release|Win32
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Debug|x64.ActiveCfg = Debug|x64
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Debug|x64.Build.0 = Debug|x64
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Debug|x86.ActiveCfg = Debug|Win32
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Debug|x86.Build.0 = Debug|Win32
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Release|x64.ActiveCfg = Release|x64
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Release|x64.Build.0 = Release|x64
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Release|x86.ActiveCfg = Release|Win32
+		{274A2C4D-12E6-4603-9162-B97C370B197A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
