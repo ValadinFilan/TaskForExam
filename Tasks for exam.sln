@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SinInWinH", "SinInWinH\SinI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cinema", "Cinema\Cinema.vcxproj", "{1CD9D08C-A477-4421-8A15-BF9E0F3F50C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BucketSort", "BucketSort\BucketSort.vcxproj", "{E84649E9-D8FC-416B-AC7F-489A8FD2F465}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextFileHandling", "TextFileHandling\TextFileHandling.vcxproj", "{20B6C135-9F5A-4B30-97D0-574ECA561E05}"
 EndProject
 Global
@@ -83,14 +85,6 @@ Global
 		{1CD9D08C-A477-4421-8A15-BF9E0F3F50C2}.Release|x64.Build.0 = Release|x64
 		{1CD9D08C-A477-4421-8A15-BF9E0F3F50C2}.Release|x86.ActiveCfg = Release|Win32
 		{1CD9D08C-A477-4421-8A15-BF9E0F3F50C2}.Release|x86.Build.0 = Release|Win32
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Debug|x64.ActiveCfg = Debug|x64
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Debug|x64.Build.0 = Debug|x64
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Debug|x86.ActiveCfg = Debug|Win32
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Debug|x86.Build.0 = Debug|Win32
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Release|x64.ActiveCfg = Release|x64
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Release|x64.Build.0 = Release|x64
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Release|x86.ActiveCfg = Release|Win32
-		{20B6C135-9F5A-4B30-97D0-574ECA561E05}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
