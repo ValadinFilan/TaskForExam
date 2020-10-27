@@ -9,16 +9,16 @@ int getInt(string message) {
 }
 int* bucketSort(int* inputArray) {
 	int n = inputArray[0];
-	cout << "Enter";
-	for (int i = 0; i < n; i++)
-		cout << inputArray[i] << ' ';
-	cout << endl;
 	int *mass = new int[n];
 	mass[0] = n;
 	for (int i = 1; i < n; i++)
 		mass[i] = inputArray[i];
 
-	//fing min max
+	cout << "Enter";
+	for (int i = 0; i < n; i++)
+		cout << inputArray[i] << ' ';
+	cout << endl;
+	//find min max
 	int max = mass[1];
 	int min = mass[1];
 	for (int i = 2; i < n; i++) {
@@ -39,40 +39,40 @@ int* bucketSort(int* inputArray) {
 	if (max != min) {
 		//chose step
 		int Step = ((max - min) / n) + 1;
-		// here is error
 
 		//filling buckets
 		for (int i = 1; i < n; i++)
 		{
 			buckets[(mass[i] - min) / Step][0]++;
-			buckets[(mass[i] - min) / Step][buckets[(mass[i] - min) / Step][0]] = mass[i];
+			buckets[(mass[i] - min) / Step][buckets[(mass[i] - min) / Step][0]] = mass[i];// 1 5 0 0 0 
 		}
-		for (int i = 0; i < n; i++)
-			buckets[i][0]++;
-
+		for (int i = 0; i < n; i++) {
+			buckets[i][0]++; //2 5 0 0 0
+			cout << "Bucket size: " << buckets[i][0] << endl;
+		}
 		for (int i = 0; i < n; i++)
 		{
 			buckets[i] = bucketSort(buckets[i]);
 			cout << "bucket " << i << " has been sorted: ";
 			for (int j = 0; j <= buckets[i][0]; j++)
-				cout << buckets[i][0] << ' ';
+				cout << buckets[i][j] << ' ';
 			cout << endl;
 			for (int j = 1; j < buckets[i][0]; j++)
 			{
-				result[0]++;
-				result[result[0]] = buckets[i][j];
-				cout << buckets[i][j] << ' ';
+				result[0]++; // 1 0 0 0 0 
+				result[result[0]] = buckets[i][j]; // 1 5 0 0 0 
+				cout << "Add: " << buckets[i][j] << ' ';
 			}
 		}
-		
+		result[0]++;
 		cout << "Fulled buckets" << endl;
 		for (int i = 0; i < n; i++)
 			cout << result[i];
 		cout << endl;
-		return result;
+		//return result;
 	}
-	else for (int i = 0; i < n; i++) result[i] = mass[i];
-
+	else for (int i = 0; i < n; i++)
+			result[i] = mass[i];
 	return result;
 }
 int main()
@@ -84,6 +84,6 @@ int main()
 		mass[i] = getInt("");
 	cout << endl;
 	mass = bucketSort(mass);
-	for (int i = 1; i <= mass[0]; i++)
+	for (int i = 1; i < mass[0]; i++)
 		cout << mass[i] << ' ';
 }
